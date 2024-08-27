@@ -15,7 +15,7 @@ export default function Root() {
 		 </div>
 
 		 {/* <!-- home --> */}
-		  <div id="home" className="py-32"> 
+		  <div id="home" className="py-20"> 
 			  <Home/>
 		  </div>
 
