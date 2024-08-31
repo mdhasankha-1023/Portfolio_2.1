@@ -1,4 +1,4 @@
-import Buttons from "../Buttons/Buttons";
+
 
 export default function ContactForm() {
   return (
@@ -68,7 +68,6 @@ export default function ContactForm() {
           </label>
         </div>
         <div className="relative w-full">
-          <Buttons type="bg-btn">Send Message</Buttons>
         </div>
       </htmlForm>
     </div>

@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import Buttons from "../Buttons/Buttons";
 
 export default function ProjectCard({project}) {
   return (
@@ -26,7 +25,7 @@ export default function ProjectCard({project}) {
       </div>
       {/* <!-- Action base sized basic button --> */}
       <div className="flex justify-start p-2 pt-0">
-        <Buttons type="bg-btn">Live Demo</Buttons>
+        Live Demo
       </div>
     </div>
   );

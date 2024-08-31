@@ -1,9 +1,16 @@
 import image from "../../../../public/portfolio_1.png"
-
-
 import Content from "../../../Components/Home/Content/Content";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 
 export default function Home() {
+
+  useGSAP(()=>{
+    gsap.from("figure", {
+      scale: 0.6,
+      duration: 3
+    })
+  })
   return (
     <div className="flex flex-col-reverse  lg:flex-row mx-auto max-w-full lg:max-w-5xl px-14 xl:max-w-7xl 2xl:max-w-[96rem] h-full">
       <div className="w-full lg:w-1/2">

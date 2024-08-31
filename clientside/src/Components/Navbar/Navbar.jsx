@@ -30,26 +30,8 @@ export default function Navbar() {
         scale: 0.4,
         duration: 1,
       });
-
-      if(clicked){
-        tl.current = gsap.timeline().from(".sm-device", {
-          opacity: 0,
-          duration: 0.7,
-        });
-
-        tl.current = gsap.timeline().from(".sm-device .navLink h2", {
-          opacity: 0,
-          x: 50,
-          duration: 1,
-          stagger: 0.2
-        });
-        tl.current = gsap.timeline().from(".sm-device .cancelBtn", {
-          opacity: 0,
-          duration: 1,
-        });
-      }
     },
-    { scope: container, dependencies: [clicked] },
+    { scope: container},
     "-=1"
   );
 
@@ -63,7 +45,7 @@ export default function Navbar() {
     <>
       <h2>Home</h2>
       <h2>About</h2>
-      <h2>Studies</h2>
+      <h2>Skills</h2>
       <h2>Projects</h2>
       <h2>Contact</h2>
     </>
