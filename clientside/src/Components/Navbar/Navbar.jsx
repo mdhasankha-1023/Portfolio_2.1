@@ -31,8 +31,7 @@ export default function Navbar() {
         duration: 1,
       });
     },
-    { scope: container},
-    "-=1"
+    { scope: container}
   );
 
 
@@ -43,11 +42,11 @@ export default function Navbar() {
 
   const navLink = (
     <>
-      <h2>Home</h2>
-      <h2>About</h2>
-      <h2>Skills</h2>
-      <h2>Projects</h2>
-      <h2>Contact</h2>
+      <h2 className="cursor-pointer">Home</h2>
+      <h2 className="cursor-pointer">About</h2>
+      <h2 className="cursor-pointer">Skills</h2>
+      <h2 className="cursor-pointer">Projects</h2>
+      <h2 className="cursor-pointer">Contact</h2>
     </>
   );
   return (
