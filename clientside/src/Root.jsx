@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import Loader from "./UI/Loader/Loader";
 
+
 const MainContent = lazy(() => import("./App"));
 
 export default function Root() {

@@ -15,7 +15,7 @@ export default function Contact() {
         />
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-end py-4 px-10 bg-primary relative shadow-2xl">
-        <div className="lg:flex hidden justify-start absolute top-[-22%]">
+        <div className="lg:flex hidden justify-start absolute top-[-30%]">
           <div className="rounded-full w-80 h-80 flex justify-center items-center">
             <figure className="rounded-full h-full w-full">
               <img

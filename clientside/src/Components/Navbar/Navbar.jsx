@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <nav
       ref={container}
-      className="relative mx-auto max-w-full lg:max-w-5xl px-14 xl:max-w-7xl 2xl:max-w-[96rem] flex justify-between items-center lg:px-4 px-8 py-6"
+      className="relative mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem] flex justify-between items-center lg:px-4 px-8 py-6"
     >
       <div className="brand flex gap-1 items-center">
         <figure className="h-[40px] w-[40px]">

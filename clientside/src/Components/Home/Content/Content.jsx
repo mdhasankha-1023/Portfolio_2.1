@@ -3,10 +3,8 @@ import { gsap } from "gsap";
 import Icons from "../../../UI/Icons/Icons";
 import PrimaryTitle from "../../../UI/PrimaryTitle/PrimaryTitle";
 import { useRef } from "react";
-import LocomotiveScroll from 'locomotive-scroll';
 
 export default function Content() {
-const locomotiveScroll = new LocomotiveScroll();
   const container = useRef(null)
   const tl = useRef(null)
 
