@@ -1,11 +1,11 @@
+/* eslint-disable react/prop-types */
 import {useRef, useState } from "react";
 import Icons from "../../UI/Icons/Icons";
 import brand from "../../../public/brand.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-export default function Navbar() {
-  const [activeSection, setActiveSection] = useState("home");
+export default function Navbar({activeSection, setActiveSection}) {
   const [clicked, setClicked] = useState(false);
   const tl = useRef();
   const barsRef = useRef(null);
