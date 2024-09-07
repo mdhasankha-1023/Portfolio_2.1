@@ -14,16 +14,14 @@ export default function AboutContent() {
       </div>
       <div className="my-2">
         <p className="text-justify text-xl">
-          I am a software development professional, specialized in front-end web
-          development. Since I began my studies in programming, I discovered my
-          interest in creating intuitive and attractive web interfaces. Every
-          day I dedicate myself to learning and practicing new technologies to
-          continue improving my skills. I consider myself a responsible, dynamic
-          and creative person, with a great capacity for adaptation and a
-          constant desire to work and learn. I have initiative to solve problems
-          and enjoy facing new challenges in the field of technology. In the
-          future, I plan to expand my knowledge and master an even greater
-          variety of tools and techniques in web development.
+          With over a year of experience as a MERN Stack Developer, I have honed
+          my skills in building dynamic and scalable web applications. I’m
+          proficient in JavaScript, React.js, Node.js, and MongoDB, with a focus
+          on delivering efficient, performance-driven solutions. My journey
+          began with an online course in web development, which has since led me
+          to work on multiple projects, including real-time applications and
+          responsive websites. Currently, I’m expanding my expertise in modern
+          web technologies and always striving to improve my development skills.
         </p>
       </div>
     </div>

@@ -34,11 +34,7 @@ export default function Content() {
       </div>
       <div className="lending_text my-4">
         <p className="text-justify text-xl text-[#c7ced1]">
-          With over 1 year of experience creating engaging and functional web
-          experiences. Expert in front-end technologies including HTML5, CSS3,
-          JavaScript and frameworks such as React, Next.js, Astro. Able to
-          translate creative designs into interactive code and optimize website
-          speed and performance.
+        Hi, I’m Md Hasan Kha, a passionate MERN Stack Developer with over 1 year of experience building responsive, user-friendly web applications. I specialize in React, Node.js, and MongoDB, and I’m always excited to take on new challenges. Let’s create something amazing together!
         </p>
       </div>
       <div className="lending_text my-4 flex gap-10">

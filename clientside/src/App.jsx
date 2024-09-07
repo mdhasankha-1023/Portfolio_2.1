@@ -66,7 +66,7 @@ export default function App() {
 
       {/* <!-- Contact --> */}
       <section id="contact" className="py-24">
-        <Contact client:load />
+        <Contact />
       </section>
     </div>
   );

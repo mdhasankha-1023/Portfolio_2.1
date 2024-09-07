@@ -17,7 +17,7 @@ export default function Home() {
         <Content />
       </div>
       <div className="w-full lg:w-1/2 flex justify-center items-center">
-        <div className="rounded-full h-[25vw] flex justify-center items-center">
+        <div className="rounded-full w-80 h-80 flex justify-center items-center">
           <figure className="rounded-full h-full w-full">
             <img
               src={image}
