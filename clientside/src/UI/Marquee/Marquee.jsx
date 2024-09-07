@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useRef } from "react";
+import arrow from "../../../public/right-arrow.png"
 
 export default function Marquee() {
   const container = useRef(null);
@@ -42,7 +43,7 @@ export default function Marquee() {
           <h2 className="leading-none">Hey I&rsquo;m Hasan</h2>
           <img
             className="h-[4.5vw]"
-            src="../../../public/right-arrow.png"
+            src={arrow}
             alt=""
           />
         </div>

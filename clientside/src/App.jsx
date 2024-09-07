@@ -33,41 +33,41 @@ export default function App() {
   return (
     <div className="bg-primary">
       {/* <!-- navbar --> */}
-      <div ref={navRef} className="sticky top-0 bg-primary z-50">
+      <header ref={navRef} className="sticky top-0 bg-primary z-50">
         <Navbar />
-      </div>
+      </header>
 
       {/* <!-- home --> */}
-      <div id="home" className="py-20">
+      <section id="home" className="py-20">
         <Home />
-      </div>
+      </section>
 
       {/* <!-- marquee --> */}
-      <div className="bg-btn-primary py-24 ">
+      <section className="bg-btn-primary py-24 ">
         <div className="border-t-[1px] border-b-[1px] border-white pb-6">
           <Marquee />
         </div>
-      </div>
+      </section>
 
       {/* <!-- about me --> */}
-      <div id="about" className="py-24 bg-secondary">
+      <section id="about" className="py-24 bg-secondary">
         <AboutMe />
-      </div>
+      </section>
 
       {/* <!-- skills --> */}
-      <div id="skills" className="py-24">
+      <section id="skills" className="py-24">
         <Skills />
-      </div>
+      </section>
 
       {/* <!-- projects --> */}
-      <div id="projects" className="py-24">
+      <section id="projects" className="py-24">
         <Projects />
-      </div>
+      </section>
 
       {/* <!-- Contact --> */}
-      <div id="contact" className="py-24">
+      <section id="contact" className="py-24">
         <Contact client:load />
-      </div>
+      </section>
     </div>
   );
 }
