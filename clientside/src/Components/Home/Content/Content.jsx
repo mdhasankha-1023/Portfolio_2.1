@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import Icons from "../../../UI/Icons/Icons";
 import PrimaryTitle from "../../../UI/PrimaryTitle/PrimaryTitle";
 import { useRef } from "react";
+import Buttons from "../../../UI/Buttons/Buttons";
 
 export default function Content() {
   const container = useRef(null)
@@ -38,14 +39,14 @@ export default function Content() {
         </p>
       </div>
       <div className="lending_text my-4 flex gap-10">
-        <button onClick={handleGetTouchBtn} className="px-8 py-4 bg-btn-primary rounded-full text-primary text-lg font-bold flex justify-center items-center gap-2">
+        <Buttons handler={handleGetTouchBtn} type={'primary'}>
           <span>Get in Touch</span>
           <Icons style={"text-primary text-lg"} type="arrow-right" />
-        </button>
-        <button  className="px-8 py-4 text-primary text-lg font-bold flex justify-center items-center gap-2 border-2 rounded-full">
+        </Buttons>
+        <Buttons type={'outline'}>
           <span>Get in Touch</span>
           <Icons style={"text-primary text-lg"} type="arrow-right" />
-        </button>
+        </Buttons>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useRef, useState } from "react";
 import Icons from "../Icons/Icons";
 
+// eslint-disable-next-line no-unused-vars
 export default function ProjectCard({ project }) {
   const cardRef = useRef(null);
   const imgRef = useRef(null);

@@ -11,23 +11,25 @@ export default function Marquee() {
       if (event.deltaY > 0) {
         gsap.to(".marquee", {
           transform: "translateX(-100%)",
-          duration: 6,
+          duration: 8,
           ease: "none",
           repeat: -1,
         })
         gsap.to(".marquee img", {
-          rotate: 180
+          rotate: 180,
+          duration: 1
         })
       }
       else{
         gsap.to(".marquee", {
           transform: "translateX(0%)",
-          duration: 6,
+          duration: 8,
           ease: "none",
           repeat: -1,
         })
         gsap.to(".marquee img", {
-          rotate: 0
+          rotate: 0,
+          duration: 1
         })
       }
     });
@@ -40,7 +42,7 @@ export default function Marquee() {
     >
       <div className="flex items-center font-bold uppercase overlay-hidden">
         <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
-          <h2 className="leading-none">Hey I&rsquo;m Hasan</h2>
+          <h2 className="leading-none">Building Modern Web Solutions</h2>
           <img
             className="h-[4.5vw]"
             src={arrow}
@@ -48,7 +50,7 @@ export default function Marquee() {
           />
         </div>
         <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
-          <h2 className="leading-none">Hey I&rsquo;m Hasan</h2>
+          <h2 className="leading-none">Building Modern Web Solutions</h2>
           <img
             className="h-[4.5vw]"
             src="../../../public/right-arrow.png"
@@ -56,7 +58,7 @@ export default function Marquee() {
           />
         </div>
         <div className="marquee flex items-center px-[1.5vw] flex-shrink-0">
-          <h2 className="leading-none">Hey I&rsquo;m Hasan</h2>
+          <h2 className="leading-none">Building Modern Web Solutions</h2>
           <img
             className="h-[4.5vw]"
             src="../../../public/right-arrow.png"
@@ -64,21 +66,13 @@ export default function Marquee() {
           />
         </div>
         <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
-          <h2 className="leading-none">Hey I&rsquo;m Hasan</h2>
+          <h2 className="leading-none">Building Modern Web Solutions</h2>
           <img
             className="h-[4.5vw]"
             src="../../../public/right-arrow.png"
             alt=""
           />
         </div>
-        {/* <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
-          <h2 className="leading-none">MERN stack developer</h2>
-          <img
-            className="h-[4.5vw]"
-            src="../../../public/right-arrow.png"
-            alt=""
-          />
-        </div> */}
       </div>
     </div>
   );

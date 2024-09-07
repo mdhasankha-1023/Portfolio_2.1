@@ -1,11 +1,12 @@
+import Buttons from "../Buttons/Buttons";
 
 
 export default function ContactForm() {
   return (
     <div className="w-full">
-      <htmlForm>
-        <div className="flex gap-4 w-full">
-          <div className="relative mb-12 w-1/2">
+      <form>
+        <div className="flex lg:flex-row flex-col gap-4 w-full">
+          <div className="relative mb-12 w-full lg:w-1/2">
             <input
               id="id-01"
               type="text"
@@ -20,7 +21,7 @@ export default function ContactForm() {
               Your name
             </label>
           </div>
-          <div className="relative mb-12 w-1/2">
+          <div className="relative mb-12 w-full lg:w-1/2">
             <input
               id="id-01"
               type="text"
@@ -67,9 +68,12 @@ export default function ContactForm() {
             Write your message
           </label>
         </div>
-        <div className="relative w-full">
+        <div className="w-full">
+          <Buttons type="primary">
+            <span>Send</span>
+          </Buttons>
         </div>
-      </htmlForm>
+      </form>
     </div>
   );
 }

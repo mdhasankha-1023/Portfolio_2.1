@@ -32,7 +32,7 @@ export default function Skills() {
           mainStyle={"text-4xl"}
         />
       </div>
-      <div className="flex flex-wrap gap-10 justify-center items-center my-4">
+      <div className="flex flex-wrap gap-x-16 gap-y-20 justify-center items-center my-4">
         {techStack.map((skill, index) => (
           <div key={index} className="w-25% flex flex-col justify-center items-center gap-2 text-white p-2">
             <span>

@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Icons from "../../../UI/Icons/Icons";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Buttons from "../../../UI/Buttons/Buttons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,17 +30,17 @@ export default function Projects() {
   const container = useRef(null);
   useGSAP(
     () => {
-      gsap.from('.card_container', {
+      gsap.from(".card_container", {
         y: 100,
         opacity: 0,
         duration: 2,
         scrollTrigger: {
           trigger: container.current,
-          start: 'top center',
-          end: 'top -200%',
+          start: "top center",
+          end: "top -200%",
           // markers: true,
-        }
-      })
+        },
+      });
     },
     { scope: container }
   );
@@ -65,26 +66,29 @@ export default function Projects() {
               <span>{project.name}</span>
             </li>
             <ProjectCard project={project} />
-            <div className="flex justify-start items-center gap-4 mt-6">
-              <div
-                className="button px-6 py-3 border-[1px] border-white rounded-full text-white flex gap-2 items-center justify-center cursor-pointer"
-              >
-                <span>About This website</span>
-                <span className="text-lg arrow">
-                  <Icons type={"arrow-right"} />
-                </span>
+            <div className="flex flex-wrap justify-center items-center gap-4 mt-6">
+              <div className="w-[30%]">
+                <Buttons type={"outline"}>
+                  <span>About</span>
+                  <span className="text-lg ">
+                    <Icons type={"arrow-right"} />
+                  </span>
+                </Buttons>
               </div>
-              <div className="button px-6 py-3 border-[1px] border-white rounded-full text-white flex gap-2 items-center justify-center cursor-pointer">
-                <span>Github</span>
-                <span className="text-lg arrow">
-                  <Icons type={"arrow-right"} />
-                </span>
+              <div className="w-[30%]">
+                <Buttons type={"outline"}>
+                  <span>Github</span>
+                  <span className="text-lg ">
+                    <Icons type={"arrow-right"} />                  </span>
+                </Buttons>
               </div>
-              <div className="button px-6 py-3 border-[1px] border-white rounded-full text-white flex gap-2 items-center justify-center cursor-pointer">
-                <span>Demo</span>
-                <span className="text-lg arrow">
-                  <Icons type={"arrow-right"} />
-                </span>
+              <div className="w-[30%]">
+                <Buttons type={"outline"}>
+                  <span>Demo</span>
+                  <span className="text-lg">
+                    <Icons type={"arrow-right"} />
+                  </span>
+                </Buttons>
               </div>
             </div>
           </div>

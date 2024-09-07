@@ -13,7 +13,7 @@ export default function Root() {
       if (progress < 100) {
         setProgress(progress + 1);
       } else {
-        setLoading(false);
+        setLoading(true);
       }
     };
 
