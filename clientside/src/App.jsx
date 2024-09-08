@@ -14,7 +14,7 @@ const websiteName = "Portfolio of mdhasankha";
 
 export default function App() {
   const navRef = useRef();
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   useGSAP(() => {
     window.addEventListener("wheel", (event) => {
@@ -48,7 +48,7 @@ export default function App() {
       });
 
       setDocumentTitle(currentSection, websiteName);
-      setActiveSection(currentSection.toLowerCase())
+      setActiveSection(currentSection.toLowerCase());
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -59,12 +59,14 @@ export default function App() {
     };
   }, []);
 
-
   return (
     <div className="bg-primary">
       {/* <!-- navbar --> */}
       <header ref={navRef} className="sticky top-0 bg-primary z-50">
-        <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
+        <Navbar
+          activeSection={activeSection}
+          setActiveSection={setActiveSection}
+        />
       </header>
 
       {/* <!-- home --> */}
@@ -85,7 +87,7 @@ export default function App() {
       </section>
 
       {/* <!-- skills --> */}
-      <section data-title="Skills"  id="skills" className="py-24">
+      <section data-title="Skills" id="skills" className="py-24">
         <Skills />
       </section>
 

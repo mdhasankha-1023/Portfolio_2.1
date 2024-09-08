@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Pagination from "../../../UI/Pagination/Pagination";
+// import Pagination from "../../../UI/Pagination/Pagination";
 import PrimaryTitle from "../../../UI/PrimaryTitle/PrimaryTitle";
 import ProjectCard from "../../../UI/ProjectCard/ProjectCard";
 import { useGSAP } from "@gsap/react";
@@ -59,9 +59,9 @@ export default function Projects() {
           subTitle={"Projects"}
         />
       </div>
-      <div className="card_container grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-16 py-8">
+      <div className="card_container grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-16 py-8 place-items-center ">
         {projects.map((project, index) => (
-          <div key={index} className="card">
+          <div key={index} className="card w-full mx-auto">
             <li className="pro_name mb-4 text-2xl font-medium text-white">
               <span>{project.name}</span>
             </li>
@@ -94,9 +94,9 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center w-full">
+      {/* <div className="flex justify-center w-full">
         <Pagination />
-      </div>
+      </div> */}
     </div>
   );
 }
