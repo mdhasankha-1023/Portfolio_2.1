@@ -20,6 +20,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiSocketdotio } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 import { FaFacebookMessenger } from "react-icons/fa";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 export default function Icons({style, type}) {
 
@@ -27,6 +28,7 @@ export default function Icons({style, type}) {
     return (
         <>
           {type === "arrow-right" && <FaArrowRightLong className={`${style}`} />}
+          {type === "download" && <FaCloudDownloadAlt className={`${style}`} />}
           {type === "cancel" && <MdCancel className={`${style}`} />}
           {type === "bars" && <FaBarsStaggered className={`${style}`} />}
           {type === "linkedin" && (

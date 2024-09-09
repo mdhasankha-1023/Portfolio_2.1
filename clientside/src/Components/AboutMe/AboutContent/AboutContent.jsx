@@ -12,8 +12,8 @@ export default function AboutContent() {
           subTitle={"About Me"}
         />
       </div>
-      <div className="my-2">
-        <p className="text-justify text-xl">
+      <div className="about-text my-2">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-justify">
           With over a year of experience as a MERN Stack Developer, I have honed
           my skills in building dynamic and scalable web applications. I’m
           proficient in JavaScript, React.js, Node.js, and MongoDB, with a focus
