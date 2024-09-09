@@ -51,7 +51,7 @@ export default function ProjectCard({ project }) {
           !cardHover && "hidden"
         } w-full h-full absolute top-0 z-[50] flex justify-center items-center gap-[3vw] bg-transparent`}
       >
-        {["react", "tailwind"].map((tec, index) => (
+        {project?.technologies.map((tec, index) => (
           <span key={index}>
             <Icons type={tec} style={'text-7xl'} />
           </span>
@@ -60,8 +60,8 @@ export default function ProjectCard({ project }) {
       {/* <!-- Image --> */}
       <figure ref={imgRef}>
         <img
-          src="https://picsum.photos/id/493/800/600"
-          alt="card image"
+          src={project.image}
+          alt="project image"
           className="aspect-video w-full"
         />
       </figure>

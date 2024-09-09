@@ -2,11 +2,41 @@ import ContactForm from "../../../UI/ContactForm/ContactForm";
 import Icons from "../../../UI/Icons/Icons";
 import PrimaryTitle from "../../../UI/PrimaryTitle/PrimaryTitle";
 import image from "../../../../public/portfolio_1.png";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 export default function Contact() {
+  const container = useRef(null);
+  const whatsappRef = useRef(null);
+  const linkedinRef = useRef(null);
+  const messengerRef = useRef(null);
+
+  const handleWhatsAppRedirect = () => {
+    const phoneNumber = "01923720498"; // Your WhatsApp number with country code
+    const message = "Hello, I would like to contact you"; // Message to send
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank"); // Open the WhatsApp URL in a new tab or window
+  };
+
+  const handleMessengerRedirect = () => {
+    const usernameOrId = "100063140996982"; // Replace with Facebook username or ID
+    const url = `https://m.me/${usernameOrId}`;
+    window.open(url, "_blank"); // Open Messenger chat in a new tab
+  };
+
+  useGSAP(()=> {
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
+
+    tl.to(messengerRef.current, {
+
+    })
+  }, {scope: container})
+
   return (
-    <div className="text-white bg-secondary pt-14 rounded-2xl shadow-2xl mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
+    <div ref={container} className="text-white bg-secondary pt-14 rounded-2xl shadow-2xl mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
       <div className="mb-8">
         <PrimaryTitle
           main={"Let's Discus Your"}
@@ -42,14 +72,16 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex gap-4 mt-6">
-            <div>
-              <Icons style={"text-5xl cursor-pointer"} type="instagram" />
+            <div ref={messengerRef} onClick={handleMessengerRedirect}>
+              <Icons style={"text-5xl cursor-pointer"} type="messenger" />
             </div>
-            <div>
+            <div ref={whatsappRef} onClick={handleWhatsAppRedirect}>
               <Icons style={"text-5xl cursor-pointer"} type="whatsapp" />
             </div>
-            <div>
-              <Icons style={"text-5xl cursor-pointer"} type="linkedin" />
+            <div ref={linkedinRef}>
+              <a href="https://www.linkedin.com/in/mdhasankha" target="_blank">
+                <Icons style={"text-5xl cursor-pointer"} type="linkedin" />
+              </a>
             </div>
           </div>
         </div>

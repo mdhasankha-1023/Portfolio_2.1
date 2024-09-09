@@ -14,16 +14,10 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     name: "Teachfosys",
-    liveLink: "https://www.teachfosys.com",
-  },
-  {
-    name: "Teachfosys",
-    liveLink: "https://www.teachfosys.com",
-  },
-  {
-    name: "Teachfosys",
-    liveLink: "https://www.teachfosys.com",
-  },
+    liveLink: "https://teachfosys.com/",
+    image: 'https://i.ibb.co.com/YcksWb2/Screenshot-223.jpg',
+    technologies: ['react', 'tailwind']
+  }
 ];
 
 export default function Projects() {
@@ -79,7 +73,8 @@ export default function Projects() {
                 <Buttons type={"outline"}>
                   <span>Github</span>
                   <span className="text-lg ">
-                    <Icons type={"arrow-right"} />                  </span>
+                    <Icons type={"arrow-right"} />
+                  </span>
                 </Buttons>
               </div>
               <div className="w-[30%]">

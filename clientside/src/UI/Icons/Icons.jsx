@@ -2,7 +2,6 @@
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdCancel } from "react-icons/md";
@@ -20,6 +19,7 @@ import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiSocketdotio } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
+import { FaFacebookMessenger } from "react-icons/fa";
 
 export default function Icons({style, type}) {
 
@@ -32,8 +32,8 @@ export default function Icons({style, type}) {
           {type === "linkedin" && (
             <FaLinkedin className={`${style} text-[#0A66C2]`} />
           )}
-          {type === "instagram" && (
-            <FaInstagramSquare className={`${style} text-[#E1306C]`} />
+          {type === "messenger" && (
+            <FaFacebookMessenger className={`${style} text-[#FF6070]`} />
           )}
           {type === "whatsapp" && (
             <IoLogoWhatsapp className={`${style} text-[#25D366]`} />
