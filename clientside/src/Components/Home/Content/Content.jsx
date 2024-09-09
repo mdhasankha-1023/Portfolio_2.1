@@ -28,7 +28,7 @@ export default function Content() {
       <div className="lending_text my-4">
         <PrimaryTitle
           main={"Hay! i am Hasan"}
-          mainStyle={"text-6xl"}
+          mainStyle={"text-4xl lg:text-6xl"}
           subStyle={"bg-secondary"}
           subTitle={"Md. Hasan Kha"}
         />

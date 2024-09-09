@@ -42,7 +42,7 @@ export default function Projects() {
   return (
     <div
       ref={container}
-      className="mx-auto max-w-full lg:max-w-5xl px-14 xl:max-w-7xl 2xl:max-w-[96rem] py-8"
+      className="mx-auto max-w-full lg:max-w-5xl px-6 lg:px-14 xl:max-w-7xl 2xl:max-w-[96rem] py-8"
     >
       <div className="my-4">
         <PrimaryTitle

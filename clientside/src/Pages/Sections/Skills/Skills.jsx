@@ -22,7 +22,7 @@ const techStack = [
 
 export default function Skills() {
   return (
-    <div className="flex flex-col gap-4 mx-auto max-w-full lg:max-w-5xl px-14 xl:max-w-7xl 2xl:max-w-[96rem]">
+    <div className="flex flex-col gap-4 mx-auto max-w-full lg:max-w-5xl px-6 lg:px-14 xl:max-w-7xl 2xl:max-w-[96rem]">
       <div className="my-2">
         <PrimaryTitle
           subTitle={"Skills"}

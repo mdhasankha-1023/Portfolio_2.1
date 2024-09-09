@@ -27,16 +27,31 @@ export default function Contact() {
     window.open(url, "_blank"); // Open Messenger chat in a new tab
   };
 
-  useGSAP(()=> {
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
 
-    tl.to(messengerRef.current, {
-
-    })
-  }, {scope: container})
+      tl.to(messengerRef.current, {});
+    },
+    { scope: container }
+  );
 
   return (
-    <div ref={container} className="text-white bg-secondary pt-14 rounded-2xl shadow-2xl mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
+    <div
+      ref={container}
+      className="text-white bg-secondary rounded-2xl shadow-2xl mx-auto max-w-11/12 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem] overflow-hidden relative"
+    >
+      <div className="lg:flex hidden justify-start absolute top-8 left-16 z-[999]">
+        <div className="rounded-full w-[28%] flex justify-center items-center">
+          <figure className="rounded-full h-full w-full">
+            <img
+              src={image}
+              className="w-full h-full rounded-full"
+              alt="hasan"
+            />
+          </figure>
+        </div>
+      </div>
       <div className="mb-8">
         <PrimaryTitle
           main={"Let's Discus Your"}
@@ -45,18 +60,7 @@ export default function Contact() {
         />
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-end py-4 px-10 bg-primary relative shadow-2xl">
-        <div className="lg:flex hidden justify-start absolute top-[-30%]">
-          <div className="rounded-full w-80 h-80 flex justify-center items-center">
-            <figure className="rounded-full h-full w-full">
-              <img
-                src={image}
-                className="w-full h-full rounded-full"
-                alt="hasan"
-              />
-            </figure>
-          </div>
-        </div>
-        <div className="w-full lg:w-[40%] p-6 my-8 lg:my-16">
+        <div className="w-full lg:w-[40%] lg:p-6 my-6 lg:my-14">
           <div className="flex flex-col gap-4">
             <div className="flex flex-col justify-start gap-4">
               <h1 className="text-xl">Email</h1>
@@ -85,7 +89,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[60%] p-6 my-8 lg:my-16">
+        <div className="w-full lg:w-[60%] lg:p-6 my-6 lg:my-14">
           <ContactForm />
         </div>
       </div>

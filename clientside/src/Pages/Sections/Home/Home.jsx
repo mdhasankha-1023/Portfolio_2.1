@@ -14,7 +14,7 @@ export default function Home() {
   })
 
   return (
-    <div className="flex flex-col-reverse  lg:flex-row mx-auto max-w-full lg:max-w-5xl px-14 xl:max-w-7xl 2xl:max-w-[96rem] h-full">
+    <div className="flex flex-col-reverse  lg:flex-row mx-auto max-w-full lg:max-w-5xl px-6 lg:px-14 xl:max-w-7xl 2xl:max-w-[96rem] h-full">
       <div className="w-full lg:w-1/2">
         <Content />
       </div>
