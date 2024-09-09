@@ -11,7 +11,7 @@ export default function Marquee() {
       if (event.deltaY > 0) {
         gsap.to(".marquee", {
           transform: "translateX(-100%)",
-          duration: 6,
+          duration: 8,
           ease: "none",
           repeat: -1,
         })
@@ -23,7 +23,7 @@ export default function Marquee() {
       else{
         gsap.to(".marquee", {
           transform: "translateX(0%)",
-          duration: 6,
+          duration: 8,
           ease: "none",
           repeat: -1,
         })
@@ -38,13 +38,13 @@ export default function Marquee() {
   return (
     <div
       ref={container}
-      className="mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem] text-white text-9xl"
+      className="mx-auto max-w-full text-white text-2xl lg:text-8xl overflow-hidden py-2"
     >
-      <div className="flex items-center font-bold uppercase overlay-hidden">
+      <div className="flex items-center font-bold uppercase">
         <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
           <h2 className="leading-none">MERN Stack Developer</h2>
           <img
-            className="h-[4.5vw]"
+            className="h-[3.5vw]"
             src={arrow}
             alt=""
           />
@@ -52,15 +52,7 @@ export default function Marquee() {
         <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
           <h2 className="leading-none">MERN Stack Developer</h2>
           <img
-            className="h-[4.5vw]"
-            src="../../../public/right-arrow.png"
-            alt=""
-          />
-        </div>
-        <div className="marquee flex items-center px-[1.5vw] flex-shrink-0">
-          <h2 className="leading-none">MERN Stack Developer</h2>
-          <img
-            className="h-[4.5vw]"
+            className="h-[3.5vw]"
             src="../../../public/right-arrow.png"
             alt=""
           />
@@ -68,11 +60,19 @@ export default function Marquee() {
         <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
           <h2 className="leading-none">MERN Stack Developer</h2>
           <img
-            className="h-[4.5vw]"
+            className="h-[3.5vw]"
             src="../../../public/right-arrow.png"
             alt=""
           />
         </div>
+        {/* <div className="marquee flex gap-[3vw] items-center px-[1.5vw] flex-shrink-0">
+          <h2 className="leading-none">MERN Stack Developer</h2>
+          <img
+            className="h-[3.5vw]"
+            src="../../../public/right-arrow.png"
+            alt=""
+          />
+        </div> */}
       </div>
     </div>
   );

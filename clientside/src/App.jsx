@@ -75,8 +75,8 @@ export default function App() {
       </section>
 
       {/* <!-- marquee --> */}
-      <section data-title="Home" className="bg-btn-primary py-24 ">
-        <div className="border-t-[1px] border-b-[1px] border-white pb-6">
+      <section data-title="Home" className="bg-btn-primary py-10 lg:py-24 ">
+        <div className="border-t-[1px] border-b-[1px] border-white lg:pb-6">
           <Marquee />
         </div>
       </section>
